@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Ropa</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <header class="header-mobile">
+            <h1 class="logo">Clothing Store</h1>
+            <button class="open-menu" id="open-menu">
+                <i class="bi bi-list"></i>
+            </button>
+        </header>
+        <aside>
+            <button class="close-menu" id="close-menu">
+                <i class="bi bi-x"></i>
+            </button>
+            <header>
+                <h1 class="logo">Clothing Store</h1>
+                <img src="img/logo.png" alt="" width="150" height="150">
+            </header>
+            <nav>
+                <ul>
+                    <li>
+                        <a class="boton-menu boton-volver" href="./index.html">
+                            <i class="bi bi-arrow-return-left"></i> Seguir comprando
+                        </a>
+                    </li>
+                    <li>
+                        <a class="boton-menu boton-carrito active" href="./carrito.html">
+                            <i class="bi bi-cart-fill"></i> Añadir nuevos productos
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <footer>
+                <p class="texto-footer">© 2024 Clothing Store</p>
+            </footer>
+        </aside>
+        <main>
+            <h2 class="titulo-principal">Añade los nuevos productos</h2>
+            <div class="contenedor-productos">
+                <section class="agregar-producto">
+                    <h2>Agregar Nuevo Producto</h2>
+                    <form id="formulario-producto">
+                        <input type="text" id="nombre" placeholder="Nombre del producto" required>
+                        <input type="number" id="precio" placeholder="Precio" required>
+                        <input type="url" id="imagen" placeholder="URL de la imagen" required>
+                        <button type="submit" class="boton">Añadir Producto</button>
+                    </form>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <header>
+        <h1>Clothing Store</h1>
+    </header>
+    <nav class="menu">
+        <a href="./index.html">Regresar a la tienda</a>
+    </nav>
+
+    <!-- Sección para añadir un nuevo producto -->
+
+    <script src="./js/productos.js"></script>
+</body>
+</html>
